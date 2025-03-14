@@ -9,30 +9,29 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    padding: 47px 19px 15px 22px;
 }
 
 .cards {
     position: relative;
-    padding: 47px 19px 15px 22px;
 }
 
 .cards__item,
 .cards__item-element,
-.benefit {
+.benefit,
+.benefit__img,
+.benefit__text {
     display: flex;
-}
-
-.cards__triangle-1 {
-    width: 88px;
 }
 
 .cards__item {
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .cards__item-element {
     flex-direction: column;
-    padding: 25px;
+    padding: 27.22px 7.21px;
 }
 
 .cards__item-element:hover {
@@ -47,7 +46,8 @@ body {
 .cards__triangle-1 {
     position: absolute;
     right: 24px;
-    top: 2px;
+    top: -50px;
+    width: 88px;
 }
 
 .card__data {
@@ -98,11 +98,11 @@ body {
     border-color: #575756;
 }
 
-.card__img-2 {
+.card__triangle-2 {
     position: absolute;
-    width: 85.15px;
     left: 1px;
-    bottom: -22px;
+    bottom: 70px;
+    width: 85.15px;
 }
 
 .cards__idea {
@@ -115,15 +115,45 @@ body {
 }
 
 .benefit {
-    margin: 0px 19px 15px 22px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .benefit__img {
-    margin: 0;
+    align-items: self-end;
     height: 418px;
     border: 3px dashed #d9d9d9;
+    margin-top: 46px;
 }
 
 .benefit__text {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 464px;
+    margin-left: 91.63px;
+}
+
+.benefit__text-ben {
+    font: 600 24px/24px "Montserrat", sans-serif;
+    margin-bottom: 30px;
+}
+
+.benefit__text-title {
+    font: 600 18px/18px "Montserrat", sans-serif;
+}
+
+.benefit__text-text {
+    font: 400 14px/14px "Montserrat", sans-serif;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.cards__triangle-3 {
+    position: absolute;
+    right: 30px;
+    bottom: -408px;
+    height: 126.36px;
 }
